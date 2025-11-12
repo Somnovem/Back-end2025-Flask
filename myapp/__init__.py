@@ -2,4 +2,4 @@ from flask import Flask
 
 app = Flask(__name__)
 
-import myapp.views
+from myapp import views, users, categories, records
