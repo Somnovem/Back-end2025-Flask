@@ -1,7 +1,8 @@
 from flask import Flask
-from myapp import views, users, categories, records
 
 app = Flask(__name__)
+
+from myapp import views, users, categories, records  # noqa: E402
 
 
 def seed_data():

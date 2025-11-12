@@ -1,6 +1,6 @@
 from datetime import datetime
 from flask import request, jsonify
-from myapp import app
+from flask import current_app as app
 from myapp.users import users
 from myapp.categories import categories
 import uuid

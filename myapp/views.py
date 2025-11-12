@@ -1,5 +1,6 @@
 from datetime import datetime, timezone
-from myapp import app
+from flask import current_app as app
+
 
 @app.route("/healthcheck")
 def healthcheck():

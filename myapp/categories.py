@@ -1,5 +1,5 @@
 from flask import request, jsonify
-from myapp import app
+from flask import current_app as app
 import uuid
 
 categories = {}
