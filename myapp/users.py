@@ -31,5 +31,5 @@ def get_user(user_id):
 def delete_user(user_id):
     if user_id in users:
         del users[user_id]
-        return '', 204
+        return 'User successfully deleted', 204
     return jsonify({"error": "User not found"}), 404

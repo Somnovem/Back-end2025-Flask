@@ -44,7 +44,7 @@ def get_record(record_id):
 def delete_record(record_id):
     if record_id in records:
         del records[record_id]
-        return '', 204
+        return 'Record successfully deleted', 204
     return jsonify({"error": "Record not found"}), 404
 
 
@@ -54,7 +54,7 @@ def get_records():
     category_id = request.args.get("category_id")
 
     if not user_id and not category_id:
-        return jsonify({"error": "Provide user_id or category_id"}), 400
+        return jsonify({"error": "Provide user_id and category_id"}), 400
 
     result = [
         r for r in records.values()
