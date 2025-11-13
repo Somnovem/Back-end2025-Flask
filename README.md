@@ -36,10 +36,11 @@ project_root/
 ## 🚀 Локальний запуск
 
 ### 1. Клонування репозиторію
+```
 bash
-git clone https://github.com/<your_username>/<your_repo>.git
-cd <your_repo>
-
+git clone https://github.com/Somnovem/Back-end2025-Flask.git
+cd Back-end2025-Flask
+```
 ### 2. Створення віртуального середовища
 python -m venv env
 source env/bin/activate  # Linux / MacOS
