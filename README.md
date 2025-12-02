@@ -17,6 +17,7 @@
 ---
 
 ## 🧩 Структура репозиторію
+```
 project_root/
 │
 ├── app/ # Пакет основного застосунку
@@ -29,16 +30,17 @@ project_root/
 ├── Dockerfile # Налаштування контейнера
 ├── docker-compose.yaml # Конфігурація для запуску сервісів
 └── README.md # Цей файл 🙂
-
+```
 ---
 
 ## 🚀 Локальний запуск
 
 ### 1. Клонування репозиторію
+```
 bash
-git clone https://github.com/<your_username>/<your_repo>.git
-cd <your_repo>
-
+git clone https://github.com/Somnovem/Back-end2025-Flask.git
+cd Back-end2025-Flask
+```
 ### 2. Створення віртуального середовища
 python -m venv env
 source env/bin/activate  # Linux / MacOS
@@ -57,10 +59,10 @@ flask run --host 0.0.0.0 -p 8080
 ## 🐳 Запуск у Docker
 
 ### 1. Збірка образу
-docker build -t backend-template:latest .
+docker build -t my-app:latest .
 
 ### 2. Запуск контейнера
-docker run -it --rm -e PORT=8080 -p 8080:8080 backend-template:latest
+docker run -it --rm -e PORT=8080 -p 8080:8080 my-app:latest
 
 ### або за допомогою docker-compose
 docker-compose up --build
@@ -81,7 +83,7 @@ docker-compose up
 ### Встановіть змінну середовища PORT=8080.
 
 ### Після завершення деплою сервіс буде доступний за публічною URL-адресою, наприклад:
-👉 https://your-app.onrender.com/healthcheck
+👉 https://back-end2025-flask/healthcheck
 
 ## 🔗 REST API
 
